@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Disappearing Ninja</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+</head>
+<body>
+   <img id="one" src="icon.png" width="20%" height=auto>
+   <img src="icon.png" width="20%" height=auto>
+   <img src="icon.png" width="20%" height=auto>
+   <img src="icon.png" width="20%" height=auto>
+   <img src="icon.png" width="20%" height=auto>
+   <img src="icon.png" width="20%" height=auto>
+   <img src="icon.png" width="20%" height=auto>
+   <img src="icon.png" width="20%" height=auto>
+   <button>restore</button>
+   
+    <script>
+        $(document).ready(function(){
+            $("img").click(function(){
+                $(this).hide("slow")
+            })
+            $("button").click(function(){
+                $("img").show()
+            })
+        })
+    </script>
+</body>
+</html>
